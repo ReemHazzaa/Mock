@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
-import com.example.moviez.app.utils.genericadapter.HolderClass
-import com.example.moviez.app.utils.genericadapter.Listable
-import com.example.moviez.app.utils.genericadapter.listener.OnItemClickCallback
-import com.example.moviez.app.utils.genericadapter.viewholder.BaseViewHolder
+import com.example.mock.app.utils.genericadapter.HolderClass
+import com.example.mock.app.utils.genericadapter.Listable
+import com.example.mock.app.utils.genericadapter.listener.OnItemClickCallback
+import com.example.mock.app.utils.genericadapter.viewholder.BaseViewHolder
 
 class GeneralListAdapter(
     context: Context,

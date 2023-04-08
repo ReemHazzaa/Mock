@@ -6,7 +6,7 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.moviez.app.utils.genericadapter.Listable
+import com.example.mock.app.utils.genericadapter.Listable
 import com.example.mock.app.utils.genericadapter.adapter.GeneralListAdapter
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
