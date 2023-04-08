@@ -1,4 +1,4 @@
-package com.example.mock.app.ui.main
+package com.example.mock.app.ui
 
 import android.os.Bundle
 import com.example.mock.app.base.BaseActivity

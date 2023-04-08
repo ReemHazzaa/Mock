@@ -1,11 +1,14 @@
 package com.example.mock.domain.entity
 
+import android.os.Parcelable
 import com.example.mock.BR
 import com.example.mock.R
 import com.example.mock.app.utils.genericadapter.HolderClass
 import com.example.mock.app.utils.genericadapter.Listable
 import com.example.mock.app.viewHolder.ProductItemViewHolder
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Product(
     val category: String,
     val description: String,
@@ -14,7 +17,7 @@ data class Product(
     val price: Double,
     val rating: Rating,
     val title: String
-) : Listable {
+) : Listable, Parcelable {
     val priceString: String get() = price.toString()
     override val listItemType: HolderClass
         get() =

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.databinding.library.baseAdapters.BR
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.mock.R
 import com.example.mock.app.base.BaseFragment
 import com.example.mock.app.extensions.updateStatusBarColor
@@ -11,6 +12,7 @@ import com.example.mock.app.utils.genericadapter.Listable
 import com.example.mock.app.utils.genericadapter.adapter.GeneralListAdapter
 import com.example.mock.app.utils.genericadapter.listener.OnItemClickCallback
 import com.example.mock.databinding.FragmentMainBinding
+import com.example.mock.domain.entity.Product
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -33,6 +35,9 @@ class MainFragment : BaseFragment<MainViewModel, FragmentMainBinding>() {
                 GeneralListAdapter(context = requireContext(), onItemClickCallback = object :
                     OnItemClickCallback {
                     override fun onItemClicked(view: View, listableItem: Listable, position: Int) {
+                        val product = (listableItem as Product)
+                        val action = MainFragmentDirections.actionMainFragmentToMovieDetailsFragment(product)
+                        findNavController().navigate(action)
 
                     }
                 })
