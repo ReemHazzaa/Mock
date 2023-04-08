@@ -1,3 +1,3 @@
 package com.example.mock.domain.entity
 
-class MockApiResponse : ArrayList<MockApiResponseItem>()
+class MockApiResponse : ArrayList<Product>()

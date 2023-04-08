@@ -1,6 +1,6 @@
 package com.example.mock.domain.entity
 
-data class MockApiResponseItem(
+data class Product(
     val category: String,
     val description: String,
     val id: Int,
