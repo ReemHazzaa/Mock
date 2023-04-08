@@ -1,10 +1,10 @@
-package com.example.moviez.app.utils.bindingadapters
+package com.example.mock.app.utils.bindingadapters
 
 import android.util.Log
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
-import com.example.moviez.R
+import com.example.mock.R
 
 object ImageBindingAdapter {
 
@@ -14,7 +14,7 @@ object ImageBindingAdapter {
         try {
             Glide
                 .with(this.rootView)
-                .load("https://image.tmdb.org/t/p/w500$url")
+                .load(url)
                 .centerCrop()
                 .error(R.drawable.baseline_error_outline_24)
                 .placeholder(R.drawable.baseline_downloading_24)

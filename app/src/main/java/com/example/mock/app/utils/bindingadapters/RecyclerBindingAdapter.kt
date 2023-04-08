@@ -1,4 +1,4 @@
-package com.example.moviez.app.utils.bindingadapters
+package com.example.mock.app.utils.bindingadapters
 
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LifecycleOwner
