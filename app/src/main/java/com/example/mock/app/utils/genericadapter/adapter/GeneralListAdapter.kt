@@ -1,4 +1,4 @@
-package com.example.moviez.app.utils.genericadapter.adapter
+package com.example.mock.app.utils.genericadapter.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
